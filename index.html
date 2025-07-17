@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <img src="images/profile.jpg" alt="My Photo" class="profile-pic" />
+      <h1>RELJIN V B</h1>
+      <p class="tagline">I LOVE ADVENTURE</p>
+
+      <!-- Social Media -->
+      <div class="social-icons">
+        <a href="https://www.instagram.com/reljin11?igsh=MTA1dDhydnFwczZlOQ==" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/share/1C3Px5a3zb/" target="_blank">Facebook</a>
+        <a href="https://www.linkedin.com/in/reljin-v-b-27a51a361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+        <a href="Add me on Snapchat! Username: reljin_2k https://www.snapchat.com/add/reljin_2k?share_id=qIfNlWyW_z0&locale=en-IN" target="_blank">Snapchat</a>
+        <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm a passionate web developer with a love for beautiful interfaces and interactive design. 
+        I enjoy building clean, user-friendly websites and applications. I'm also a hobbyist photographer and traveler.
+      </p>
+
+      <ul class="details">
+        <li><strong>Name:</strong> Reljin V B</li>
+        <li><strong>Age:</strong> 19</li>
+        <li><strong>Location:</strong> Kanniyakumari - Chennai, India</li>
+        <li><strong>Email:</strong> reljinreljin1@gmail.com</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <div class="container">
+      <h2>My Gallery</h2>
+      <div class="gallery-grid">
+        <img src="images/0.jpg" alt="Photo 1" />
+        <img src="images/2.jpg" alt="Photo 2" />
+        <img src="images/3.jpg" alt="Photo 3" />
+        <img src="images/4.jpg" alt="Photo 4" />
+        <img src="images/5.jpg" alt="Photo 4" />
+        <img src="images/6.jpg" alt="Photo 4" />
+        <img src="images/70000.jpg" alt="Photo 4" />
+        <img src="images/8.jpg" alt="Photo 4" />
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="gallery">
+    <div class="container">
+      <h2>Memories</h2>
+      <div class="gallery-grid">
+        <img src="images/download (1).png" alt="Photo 1" />
+        <img src="images/1726557554033.jpg" alt="Photo 2" />
+        <img src="images/1726557554033.jpg" alt="Photo 3" />
+        <img src="images/1726557554033.jpg" alt="Photo 4" />
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Reljin V B. All rights reserved.</p>
+  </footer>
+
+  <!-- Ripple Effect Script -->
+  <script>
+    document.querySelectorAll('.social-icons a').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+        this.appendChild(ripple);
+        ripple.style.left = `${e.offsetX}px`;
+        ripple.style.top = `${e.offsetY}px`;
+        setTimeout(() => ripple.remove(), 600);
+      });
+    });
+  </script>
+
+</body>
+</html>
